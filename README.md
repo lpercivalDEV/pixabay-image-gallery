@@ -1,4 +1,5 @@
-#Pixabay Image Gallery
+# Pixabay Image Gallery
+
 An image gallery built using React, TailwindCSS, the Pixabay API and this tutorial as a guide: https://github.com/bradtraversy/react-tailwind-pixabay-gallery
 
 ## Getting Started with Create React App
