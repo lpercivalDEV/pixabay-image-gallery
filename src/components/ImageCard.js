@@ -6,9 +6,9 @@ const ImageCard = ({ image }) => {
   return (
     <div>
       <div className="max-w-sm rounded overflow-hidden shadow-lg">
-        <img src={image.webformatURL} alt="" className="w-full" />
-        <div className="px-6 py-4">
-          <div className="font-bold text-purple-500 text-xl mb-2">
+        <img src={image.webformatURL} alt="" className="w-full opacity-100" />
+        <div className="px-6 py-4 bg-white opacity-80">
+          <div className="font-bold text-yellow-500 text-xl mb-2">
             Photo by {image.user}
           </div>
           <ul>
@@ -26,7 +26,7 @@ const ImageCard = ({ image }) => {
             </li>
           </ul>
         </div>
-        <div className="px-6 py-4">
+        <div className="px-6 py-4 bg-white opacity-60">
           {tags.map((tag, index) => (
             <span
               key={index}
