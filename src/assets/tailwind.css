@@ -14,3 +14,14 @@ body {
   );
   font-family: "Montserrat", sans-serif;
 }
+
+img:hover {
+  filter: blur(5.5px);
+  filter: sepia(70%);
+  border: 0.5rem solid #f22;
+}
+
+input::placeholder {
+  color: #c42;
+  opacity: 1;
+}

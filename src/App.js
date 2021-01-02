@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     fetch(
-      `https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&q=${term}&image_type=photo&pretty=true`
+      `https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&q=${term}&image_type=photo&pretty=true&order=popular&editors_choice=true&per_page=60`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -37,11 +37,9 @@ function App() {
           LOADING
         </h1>
       ) : (
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 gap-10">
           {images.map((image) => (
-            <a href={image.pageURL}>
-              <ImageCard key={image.id} image={image} />
-            </a>
+            <ImageCard key={image.id} image={image} />
           ))}
         </div>
       )}
